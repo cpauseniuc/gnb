@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "41452b7d-b59c-401f-996d-0db89b073fad",
+		"name": "Api Methods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Rates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44388/api/rate/getrates",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44388",
+					"path": [
+						"api",
+						"rate",
+						"getrates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44388/api/transaction/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44388",
+					"path": [
+						"api",
+						"transaction",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transactions by SKU in Eur",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44388/api/transaction/getTransactionsBySkuInEur?SKU=Y3238",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44388",
+					"path": [
+						"api",
+						"transaction",
+						"getTransactionsBySkuInEur"
+					],
+					"query": [
+						{
+							"key": "SKU",
+							"value": "Y3238"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get transactions by SKU in any currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44388/api/transaction/getTransactionReport?SKU=K5204&currency=USD",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44388",
+					"path": [
+						"api",
+						"transaction",
+						"getTransactionReport"
+					],
+					"query": [
+						{
+							"key": "SKU",
+							"value": "K5204"
+						},
+						{
+							"key": "currency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
